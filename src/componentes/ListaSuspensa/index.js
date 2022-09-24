@@ -1,12 +1,12 @@
 import './index.css';
 
-const ListaSuspensa = (props) => {
-    console.log(props.itens);
+const ListaSuspensa = ({itens, label}) => {
+    console.log(itens);
     return (
         <div className='lista-suspensa'>
-            <label>{props.label}</label>
+            <label>{label}</label>
                 <select>
-                    {props.itens.map(item => {
+                    {itens.map(item => {
                         return <option key={item}>{item}</option>
                     })}
                 </select>
