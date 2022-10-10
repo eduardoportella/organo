@@ -1,7 +1,6 @@
 import './index.css';
 
 const ListaSuspensa = ({itens, label}) => {
-    console.log(itens);
     return (
         <div className='lista-suspensa'>
             <label>{label}</label>
